@@ -1,0 +1,12 @@
+fc3010d7f32f4e31139da8bcbca0c7c2 *ChangeLog
+e08a6e4ae881953c2baa3d5f559f7419 *DESCRIPTION
+cb68f19f53d9fd2881f186abf8ede660 *NAMESPACE
+b89b895dffacea053bf9df16383e6f68 *R/pinp.R
+30ddb5fcf610b666832fc8583214690f *README.md
+1623a1ae12a809c51d1ab28688379e1d *inst/NEWS.Rd
+50bb667a6cb7dd61fc2bf23e06cade66 *inst/rmarkdown/templates/pdf/resources/template.tex
+55445278f2b9c7917360ba61cc6d7ed4 *inst/rmarkdown/templates/pdf/skeleton/pinp.bib
+377afd01287a3e3bb5f9641b2763cf14 *inst/rmarkdown/templates/pdf/skeleton/pinp.cls
+a80bb92c19cc62ca99977e0b573dd294 *inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd
+f66a903ac5918aebb69ac0996cab0611 *inst/rmarkdown/templates/pdf/template.yaml
+a6f3e6df607348487eff39a565642eb7 *man/pinp.Rd

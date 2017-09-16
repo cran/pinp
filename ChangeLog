@@ -1,0 +1,119 @@
+2017-09-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Release 0.0.1
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Misc edits
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
+
+	* R/pinp.R: Correct example in manual page
+	* man/pinp.Rd: Idem
+
+2017-09-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/NEWS.Rd: Added
+	* README.md: Updated text and screenshots
+
+2017-09-13  James Joseph Balamuta  <balamut2@illinois.edu>
+
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Quick pass over
+	content.
+
+	* R/pinp.R: Added references and see also section.
+	* man/pinp.Rd: idem
+
+	* inst/rmarkdown/templates/pdf/resources/pinp.bib: Added citations
+	for rticles, rmarkdown, and knitr. Changed PeerJ key away from DOI.
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Updated and
+	added citations in skeleton
+
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Moved in
+	bibliography creation from the line at end of file.
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Removed
+	single line bibliography entry
+
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Bumped
+	default height of figure based on Dirk's suggestion.
+
+	* man/pinp.Rd: Re-ran roxygen2 to pick up citation_package
+	parameter added.
+
+2017-09-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Further
+	refinements for fonts, colors, equation numbering and other edits
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Example use
+	of new fonts, colors, equantion references, two-column figure
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.bib: Simplify
+
+2017-09-12  James Joseph Balamuta  <balamut2@illinois.edu>
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls:  Added footer content
+	hook with a default value of Package Vignette.
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Setup pandoc
+	hook for footer_content variable
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: idem
+
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Allowed doi
+	field to receive URLs.
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: idem
+
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Added watermark
+	pandoc variable with default value of false.
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: idem
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Changed watermark
+	usage to rely on built-in print feature of xwatermark
+
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Fix lineno
+	pandoc variable usage
+
+2017-09-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Use mdframed for
+	framed and shaded code boxen (following existing Rcpp vignettes)
+
+2017-09-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/pinp.R: Use basic knitr code typesetting with fewer overrides
+
+2017-09-10  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Acknowledge sources (rticles, pnas)
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
+
+2017-09-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Updated
+	footer showing project URL
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Idem
+
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Partially
+	rewritten  / simplified to better suit project
+
+2017-09-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/pinp.R (pinp): Updated to support LaTeX citations
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd (Note): Added
+	reference to bibiography example
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Added one set of
+	Sweave-alike environments
+
+	* NAMESPACE: Added import statements for knitr and markdown
+	* DESCRIPTION: Ditto
+
+2017-09-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Added
+	* ChangeLog: Idem
+	* .travis.yml (install): Idem
+
+	* docs/*: Added with example pdf and png files
+
+2017-09-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/pdf/*: First version
+	* R/pinp.R (pinp): Idem
+	* man/pinp.Rd: Idem
+	* DESCRIPTION: Idem
+	* NAMESPACE: Idem
