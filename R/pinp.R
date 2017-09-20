@@ -36,18 +36,30 @@ pinp <- function(..., keep_tex = TRUE, citation_package = 'natbib') {
 
     template <- system.file("rmarkdown", "templates", "pdf", "resources", "template.tex",
                             package="pinp")
-    base <- inherit_pdf_document(
-        ..., template = template, keep_tex = keep_tex, citation_package = citation_package
-    )
+    base <- inherit_pdf_document(..., template = template,
+                                 keep_tex = keep_tex, citation_package = citation_package)
 
-    base$knitr$opts_chunk$prompt <- FALSE # TRUE
-    base$knitr$opts_chunk$comment <- NA
-    base$knitr$opts_chunk$highlight <- TRUE  # changed
+    base$knitr$opts_chunk$prompt <- FALSE 	# changed from TRUE
+    base$knitr$opts_chunk$comment <- '# '	# default to one hashmark
+    base$knitr$opts_chunk$highlight <- TRUE  	# changed as well
 
-    base$knitr$opts_chunk$dev.args <- list(pointsize = 11)
-    base$knitr$opts_chunk$fig.width <- 4.9 # 6.125" * 0.8, as in template
-    base$knitr$opts_chunk$fig.height <- 3.675 # 4.9 * 3:4
+    base$knitr$opts_chunk$dev.args <- list(pointsize = 9)  # from 11
+    base$knitr$opts_chunk$fig.width <- 3.5 	# from 4.9 # 6.125" * 0.8, as in template
+    base$knitr$opts_chunk$fig.height <- 3.5	# from 3.675 # 4.9 * 3:4
     base$knitr$opts_chunk$fig.align <- "center"
+
+    hook_output <- function(x, options) {
+        paste('\\begin{ShadedResult}\n\\begin{verbatim}\n', x,
+              '\\end{verbatim}\n\\end{ShadedResult}\n', sep = '')
+    }
+    base$knitr$knit_hooks$output  <- hook_output
+    base$knitr$knit_hooks$message <- hook_output
+    base$knitr$knit_hooks$warning <- hook_output
+
+    for (f in c("pinp.cls", "jss.bst"))
+        if (!file.exists(f))
+            file.copy(system.file("rmarkdown", "templates", "pdf", "skeleton", f, package="pinp"),
+                      ".")
 
     base
 }

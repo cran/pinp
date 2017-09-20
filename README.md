@@ -5,8 +5,9 @@ Pinp is not PNAS
 ### Motivation
 
 The template provided by the PNAS Article template in the
-[rticles](https://cran.r-project.org/package=rticles) package makes it very easy and convenient to
-create attractive looking two-column papers.
+[rticles](https://cran.r-project.org/package=rticles) package makes it very easy
+and convenient to create attractive looking two-column papers with an option
+to switch to a one-column paper.
 
 There were however a few changes we wanted to make such as the use of standard natbib citations,
 more extended use of color, a different font as well as the removal of a number of PNAS-specific
@@ -15,7 +16,8 @@ this _pinp_ package started.
 
 ### Example
 
-A complete pdf example is provided [here](https://eddelbuettel.github.io/pinp/Rcpp-introduction.pdf)
+A complete pdf example of the two-column default template is
+provided [here](https://eddelbuettel.github.io/pinp/Rcpp-introduction.pdf)
 by the new introductory [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html) vignette, which is
 itself based on our [PeerJ Prepint](https://peerj.com/preprints/3188/).
 
@@ -37,28 +39,28 @@ and the final two pages:
 
 ### Status
 
-The package is working, but not yet on [CRAN](https://cran.r-project.org/).
+The package is working and on [CRAN](https://cran.r-project.org/).
 
 Some float placements are a little fragile in LaTeX two-column mode.  If in doubt, add more text
 around it to aid the heuristic.
 
 ### Usage 
 
-Use your favourite tool to install from GitHub, _e.g._,
+Use the standard 
 
-```shell
-$ installGithub.r eddelbuettel/pinp          # using a script from littler
+```r
+install.packages("pinp")
 ```
 
-and then use as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
-
-and then use as a Markdown template via RStudio, or use code such as
+to install it from CRAN, and then use as a Markdown template via RStudio, or use code such as
 
 ```r
 library(rmarkdown)
 draft("mypaper.Rmd", template="pdf", package="pinp", edit=FALSE)
 render("mypaper.Rmd")
-```     
+```
+
+to create a first draft of a new `mypaper.Rmd`.
 
 ### Requirements
 

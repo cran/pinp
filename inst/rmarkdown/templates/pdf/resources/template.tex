@@ -1,4 +1,4 @@
-\documentclass[9pt,twocolumn,twoside,printwatermark=$if(watermark)$$watermark$$else$false$endif$]{pinp}
+\documentclass[$if(fontsize)$$fontsize$,$else$9pt,$endif$$if(one_column)$$if(lineno)$lineno,$endif$$else$twocolumn,$endif$$if(one_sided)$$else$twoside,$endif$printwatermark=$if(watermark)$$watermark$$else$false$endif$]{pinp}
 
 %% Some pieces required from the pandoc template
 \providecommand{\tightlist}{%
@@ -18,12 +18,6 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
-%$if(pnas_type)$
-%\templatetype{$pnas_type$}  % Choose template
-%$else$
-%\templatetype{pnasresearcharticle}
-%$endif$
-
 \title{$title$}
 
 $for(author)$
@@ -34,28 +28,17 @@ $for(address)$
   \affil[$address.code$]{$address.address$}
 $endfor$
 
+$if(numbersections)$
+\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
 
 % Please give the surname of the lead author for the running footer
 \leadauthor{$lead_author_surname$}
 
-% Please add here a significance statement to explain the relevance of your work
-\significancestatement{$significance$}
-
-
-\authorcontributions{$author_contributions$}
-
-$if(conflict_of_interest)$
-\authordeclaration{$conflict_of_interest$}
-$endif$
-
-$if(equal_authors)$
-\equalauthors{\textsuperscript{$equal_authors.code$} $equal_authors.text$}
-$endif$
-
-\correspondingauthor{\textsuperscript{$corresponding_author.code$} $corresponding_author.text$}
-
 % Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
-$if(keywords)$ \keywords{ $for(keywords)$ $keywords$ $sep$| $endfor$ $endif$ }
+$if(keywords)$ \keywords{ $for(keywords)$ $keywords$ $sep$| $endfor$ } $endif$ 
 
 \begin{abstract}
 $abstract$
@@ -82,9 +65,15 @@ $endif$
 
 % If your first paragraph (i.e. with the \dropcap) contains a list environment (quote, quotation, theorem, definition, enumerate, itemize...), the line after the list may have some extra indentation. If this is the case, add \parshape=0 to the end of the list environment.
 
+$if(acknowledgements)$
 \acknow{$acknowledgements$}
+$endif$
 
 $body$
+
+\showmatmethods
+\showacknow
+\pnasbreak 
 
 $if(natbib)$
 $if(bibliography)$
@@ -96,6 +85,7 @@ $else$
 $endif$
 $endif$
 \bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+\bibliographystyle{$if(biblio-style)$$biblio-style$$else$jss$endif$}
 $endif$
 $endif$
 
