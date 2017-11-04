@@ -3,7 +3,15 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/pinp/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/pinp/issues/#1}{##1}}
 
-\section{Changes in tint version 0.0.3 (2017-10-28)}{
+\section{Changes in pinp version 0.0.4 (2017-11-04)}{
+  \itemize{
+    \item Correct NEWS headers from 'tint' to 'pinp' (\ghit{45}).
+    \item New front-matter variables \sQuote{skip_final_break} skips the
+    \code{pnasbreak} on final page which back as default (\ghpr{47}).
+  }
+}
+
+\section{Changes in pinp version 0.0.3 (2017-10-28)}{
   \itemize{
     \item Section 'Acknowledgements' now conditional on a frontmatter
     setting, section 'Matmethods' has been removed, \code{pnasbreak} 
@@ -19,7 +27,7 @@
   }
 }
 
-\section{Changes in tint version 0.0.2 (2017-09-20)}{
+\section{Changes in pinp version 0.0.2 (2017-09-20)}{
   \itemize{
     \item The YAML segment can be used to select font size, one-or-two
     column mode, one-or-two side mode, linenumbering and watermarks
@@ -38,7 +46,7 @@
   }
 }
 
-\section{Changes in tint version 0.0.1 (2017-09-15)}{
+\section{Changes in pinp version 0.0.1 (2017-09-15)}{
   \itemize{
     \item Initial CRAN release
   }
