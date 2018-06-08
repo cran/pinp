@@ -1,14 +1,14 @@
-33848f7a2eea9257e48dfe676a366983 *ChangeLog
-ab10bbc1ce5e3f986ecffe6141341fe3 *DESCRIPTION
+0a2b2be2ba0d7f7803dd0f1b6ee2ac39 *ChangeLog
+84bdd5bb86d97a8f9eb0ce6a16cd49df *DESCRIPTION
 cb68f19f53d9fd2881f186abf8ede660 *NAMESPACE
 69da71681bca0a853af382b23c462c7a *R/pinp.R
 161a4bea5a34d53517b457eda132c39e *README.md
-cb137f569418e088712c45aa997cf81c *build/vignette.rds
+2faf9d2dd7e78f10447f0be4899ef979 *build/vignette.rds
 49389d26f9db0d2b316eaa3d312011c1 *cleanup
-99afb04f4b6a67952fb714a72c831bf7 *inst/NEWS.Rd
+b150c4a153e479552d9f8f3898bcc9b8 *inst/NEWS.Rd
 a3972b10d15f0608fe2b2a05d698befb *inst/doc/pinp.R
-b27d84cf3da03c2e8675125049ec5aae *inst/doc/pinp.Rmd
-157cfe992aad466a13920373ea9a095a *inst/doc/pinp.pdf
+e53de332f852a93cc205c314a507003a *inst/doc/pinp.Rmd
+83dfcd3c8a9200de9041714f25c483b2 *inst/doc/pinp.pdf
 22ab53a3c82eb3ae5e9370505bce2bf1 *inst/rmarkdown/templates/pdf/resources/template.tex
 9e13367ef4850e3c0d4fa27c607e2137 *inst/rmarkdown/templates/pdf/skeleton/jss.bst
 56611c46972bcb3b38d4c99c19cc638a *inst/rmarkdown/templates/pdf/skeleton/pinp.bib
@@ -16,4 +16,5 @@ b27d84cf3da03c2e8675125049ec5aae *inst/doc/pinp.Rmd
 1c569e1f008b8baf6fded5c9bc93adc7 *inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd
 f66a903ac5918aebb69ac0996cab0611 *inst/rmarkdown/templates/pdf/template.yaml
 a3dd7cd907647ffffc01966b90f12fe6 *man/pinp.Rd
-b27d84cf3da03c2e8675125049ec5aae *vignettes/pinp.Rmd
+6620d721b77729afc6e2c763adbf21c7 *vignettes/bib.tex
+e53de332f852a93cc205c314a507003a *vignettes/pinp.Rmd
