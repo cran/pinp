@@ -3,6 +3,17 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/pinp/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/pinp/issues/#1}{##1}}
 
+\section{Changes in pinp version 0.0.7 (2019-01-11)}{
+  \itemize{
+    \item Added some more documentation for different YAML header fields.
+    \item A new option has been added for a 'date_subtitle' (Ilya
+    Kashnitsky in \ghpr{64} fixing \ghit{63}).
+    \item 'doi' YAML option renamed to 'doi_footer' to permit DOIs in
+    refs, 'doi' header still usable (Dirk in \ghpr{66} fixing \ghit{65}). 
+    \item The 'doi' macro was redefined to create a hyperlink.
+  }
+}
+
 \section{Changes in pinp version 0.0.6 (2018-07-16)}{
   \itemize{
     \item Added YAML header option 'papersize' (Saghir Bashir in \ghpr{54}
