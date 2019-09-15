@@ -1,8 +1,8 @@
 Package: pinp
 Type: Package
 Title: 'pinp' is not 'PNAS'
-Version: 0.0.8
-Date: 2019-09-08
+Version: 0.0.9
+Date: 2019-09-15
 Author: Dirk Eddelbuettel and James Balamuta
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: A 'PNAS'-alike style for 'rmarkdown', derived from the
@@ -16,6 +16,6 @@ VignetteBuilder: knitr
 License: GPL-3
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2019-09-08 19:50:12.285696 UTC; edd
+Packaged: 2019-09-15 13:03:03.008801 UTC; edd
 Repository: CRAN
-Date/Publication: 2019-09-08 20:10:03 UTC
+Date/Publication: 2019-09-15 13:20:02 UTC

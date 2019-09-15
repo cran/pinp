@@ -1,3 +1,31 @@
+2019-09-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* R/pinp.R: No longer copy titlesec.sty in as underlying issue fixed
+
+	* vignettes/pinp.Rmd: Mention widetext deprecation and altrenatives.
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Ditto
+
+2019-09-10  Dirk Eddelbuettel  <edd@debian.org>
+
+	* vignettes/pinp.Rmd (footer_contents): 
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Support
+	document option 'watermark'
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Ditto
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Illustrate use
+	* R/pinp.R: Document the 'watermark' options
+	* man/pinp.Rd: Document and illustrate option
+
+2019-09-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Remove stray
+	\code{\makeatother} causing all this trouble -- with huge thank you
+	to Javier Bezos and Norbert Preining for their help in isolating this
+
 2019-09-08  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.8
@@ -13,7 +41,7 @@
 	working version as current version in texlive has an issue with pnas
 	* inst/rmarkdown/templates/pdf/skeleton/ttlkeys.def: Ditto
 	* R/pinp.R (pinp): Copy titlesec.sty and ttlkeys.def into work directory
-	
+
 2019-09-07  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version

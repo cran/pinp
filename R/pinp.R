@@ -66,6 +66,9 @@
 #'   final (force) page that is part of the PNAS style, default is
 #'   false i.e. break is inserted as with PNAS.}
 #'   \item{\code{title}}{(Mandatory) document title, no default.}
+#'   \item{\code{watermark}}{(Optional) Logical value to select a
+#'   \sQuote{Draft} watermark to be added (though figures tend to
+#'   render above it, default is false.}
 #' }
 #'
 #' The vignette source shows several of these options in use, and also
@@ -123,7 +126,7 @@ pinp <- function(..., keep_tex = TRUE, citation_package = 'natbib', collapse = F
     base$knitr$knit_hooks$message <- hook_output
     base$knitr$knit_hooks$warning <- hook_output
 
-    for (f in c("pinp.cls", "jss.bst", "titlesec.sty", "ttlkeys.def"))
+    for (f in c("pinp.cls", "jss.bst"))
         if (!file.exists(f))
             file.copy(system.file("rmarkdown", "templates", "pdf", "skeleton", f, package="pinp"), ".")
 
