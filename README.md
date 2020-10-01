@@ -1,6 +1,11 @@
-## pinp [![Build Status](https://travis-ci.org/eddelbuettel/pinp.svg)](https://travis-ci.org/eddelbuettel/pinp) [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) [![CRAN](http://www.r-pkg.org/badges/version/pinp)](https://cran.r-project.org/package=pinp) [![Dependencies](https://tinyverse.netlify.com/badge/pinp)](https://cran.r-project.org/package=pinp) [![Downloads](http://cranlogs.r-pkg.org/badges/pinp?color=brightgreen)](http://www.r-pkg.org/pkg/pinp)
+## pinp: Pinp is not PNAS
 
-Pinp is not PNAS
+[![Build Status](https://travis-ci.org/eddelbuettel/pinp.svg)](https://travis-ci.org/eddelbuettel/pinp) 
+[![Package-License](https://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0.html) 
+[![CRAN](https://www.r-pkg.org/badges/version/pinp)](https://cran.r-project.org/package=pinp) 
+[![Dependencies](https://tinyverse.netlify.com/badge/pinp)](https://cran.r-project.org/package=pinp) 
+[![Downloads](https://cranlogs.r-pkg.org/badges/pinp?color=brightgreen)](https://www.r-pkg.org/pkg/pinp)
+[![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/pinp)](https://github.com/eddelbuettel/pinp)
 
 ### Motivation
 
@@ -26,7 +31,7 @@ As of release 0.0.2, the package now has a vignette:
 
 A complete pdf example of the two-column default template is
 provided [here](https://eddelbuettel.github.io/pinp/Rcpp-introduction.pdf)
-by the new introductory [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html) vignette, which is
+by the new introductory [Rcpp](https://dirk.eddelbuettel.com/code/rcpp.html) vignette, which is
 itself based on our [PeerJ Prepint](https://peerj.com/preprints/3188/).
 
 A screenshot of the first two pages:
@@ -93,13 +98,21 @@ texlive-publishers
 texlive-science
 ```
 
+### See also
+
+- [binb](https://github.com/eddelbuettel/binb): Binb is not Beamer: Stylish pdf Presentations from RMarkdown
+- [linl](https://github.com/eddelbuettel/linl): Linl is not Letter: LaTeX letters from RMarkdown
+- [tint](https://github.com/eddelbuettel/tint): tint is not tufte: Beautiful pdf or html handout or writeups
+
+and the [minm](https://github.com/eddelbuettel/minm) package installing all of them.
+
 ### Authors
 
 Dirk Eddelbuettel and James Balamuta, leaning on the earlier work by JJ et al in the 
 [rticles](https://cran.r-project.org/package=rticles) package.
 
-The authors of the underlying [PNAS LaTeX Style](http://www.pnas.org/site/authors/latex.xhtml) are
-not explicitedly listed, but [PNAS](http://www.pnas.org) refers to
+The authors of the underlying [PNAS LaTeX Style](https://www.pnas.org/authors/submitting-your-manuscript) are
+not explicitedly listed, but [PNAS](https://www.pnas.org) refers to
 [Overleaf](https://www.overleaf.com/).
 
 ### License
@@ -107,6 +120,6 @@ not explicitedly listed, but [PNAS](http://www.pnas.org) refers to
 GPL-3 for this package, as well as the short code taken with grateful acknowledgements from the
 [rticles](https://cran.r-project.org/package=rticles) package.
 
-The main [PNAS LaTeX](http://www.pnas.org/site/authors/latex.xhtml) style
+The main [PNAS LaTeX](https://www.pnas.org/authors/submitting-your-manuscript) style
 file (and supporting files) are under the
 [LPPL (LaTeX Project Public License) version 1.3 or later](https://www.latex-project.org/lppl/).

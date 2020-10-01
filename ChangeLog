@@ -1,3 +1,37 @@
+2020-10-01  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.10
+
+2020-09-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Add columns mode
+	with a special nod of appreciation to Grant McDermott
+
+2020-09-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+2020-09-09  Ilya Kashnitsky <ilya.kashnitsky@gmail.com>
+
+	* R/pinp.R: New (optional) document_date YAML variable
+	* inst/rmarkdown/templates/pdf/resources/template.tex: Idem
+	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Idem
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
+
+2020-04-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add 'last commit' badge
+
+2019-10-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add 'See also' section
+
+2019-09-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.9
+
 2019-09-11  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version
@@ -9,7 +43,7 @@
 
 2019-09-10  Dirk Eddelbuettel  <edd@debian.org>
 
-	* vignettes/pinp.Rmd (footer_contents): 
+	* vignettes/pinp.Rmd: Document 'watermark'
 
 	* inst/rmarkdown/templates/pdf/skeleton/pinp.cls: Support
 	document option 'watermark'
