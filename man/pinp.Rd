@@ -15,7 +15,7 @@ LaTeX files are to be kept, defaults to \code{TRUE}}
 \item{citation_package}{A character variable selecting the LaTeX
 citation package; defaults to \code{natbib}.}
 
-\item{collapse}{A boolean toggle to enable the \code{\link{knitr}}
+\item{collapse}{A boolean toggle to enable the \code{\link[knitr]{knitr}}
 option \code{collapse}, defaults to \code{FALSE}}
 }
 \value{
@@ -57,7 +57,7 @@ alphabetical order) in the document metadata:
   \item{\code{date_subtitle}}{(Optional) A free-form text string
   which be used to mention the bibliographic info in a post-print.
   If not specified, defaults to "This version was compiled on
-  {current date}"}
+  \emph{current date}" where the current date is filled in.}
   \item{\code{document_date}}{(Optional) A free-form text string
   designed to specify the date of the document. It can be useful for example
   to specify the exact date of the publication in a post-print. If not
